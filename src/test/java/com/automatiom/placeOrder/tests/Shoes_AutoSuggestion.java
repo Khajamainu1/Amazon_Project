@@ -34,6 +34,8 @@ public class Shoes_AutoSuggestion extends BaseTest {
 		System.out.println("Auto suggestion : " + autoSuggestion.size());
 //		autoSuggestion.get(0).click();
 		
+		Driver.getDriver().findElement(By.xpath(null));
+		
 		
 		
 		

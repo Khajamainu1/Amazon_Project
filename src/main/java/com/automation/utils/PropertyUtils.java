@@ -15,6 +15,8 @@ public class PropertyUtils {
 
 	static Map<String, String> map = new HashMap<String, String>();
 	
+	
+	
 static {
 		Properties prop = new Properties();
 		try {
@@ -45,6 +47,10 @@ static {
 		}
 		else
 		return "Key not found";
+		
+	
+		
+	
 		
 	}
 	

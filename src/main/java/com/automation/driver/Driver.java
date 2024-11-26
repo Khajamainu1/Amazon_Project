@@ -15,7 +15,11 @@ import com.google.common.util.concurrent.Uninterruptibles;
 public class Driver {
 	
 	
-	private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
+	private Driver()
+	{
+		
+	}
+	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 //	private static WebDriver driver;
 	public static WebDriver initDriver()
 	{
@@ -65,7 +69,8 @@ public class Driver {
 		if(driver.get()!=null)
 		{
 		driver.get().quit();
-		driver = null;
+//		driver = null;
+		driver.remove();
 		}
 		
 		
@@ -74,6 +79,15 @@ public class Driver {
 	public static WebDriver getDriver()
 	{
 		return driver.get();
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(getDriver());
+		
+		Driver.initDriver(); // Now get the initialized WebDriver instance
+		WebDriver driverInstance = Driver.getDriver(); 
+		System.out.println("WebDriver instance: " + driverInstance);
+		
 	}
 
 }
