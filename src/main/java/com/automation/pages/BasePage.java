@@ -1,8 +1,13 @@
 package com.automation.pages;
 
+
+
+
+
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -10,13 +15,24 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.automation.driver.Driver;
 
+import com.automation.reports.ExtentLogger;
+
 public class BasePage {
+	
+	JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver(); 
 	
 	//click-method
 	public static void click(WebElement element, String elementName)
 	{
 		element.click();
 		System.out.println(elementName + " : is clicked");
+	}
+	
+	protected void clickUsingJavaScriptExecutor(WebElement element, String elementname) {
+		JavascriptExecutor executor = (JavascriptExecutor) Driver.getDriver();
+		executor.executeScript("arguments[0].click();", element);
+		System.out.println(elementname + " is clicked");
+		
 	}
 	
 	//clear-Method
@@ -62,6 +78,17 @@ public class BasePage {
 	{
 		return element.getText().trim();
 		
+	}
+	
+	protected void scrollDown(WebElement element) {
+
+		JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+		js.executeScript("arguments[0].scrollIntoView({block: 'center'});", element);
+
+	}
+	
+public void  zoomOutBrowser() {
+	    js.executeScript("document.body.style.zoom='70%'");
 	}
 	
 	

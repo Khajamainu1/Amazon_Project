@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.automatiom.placeOrder.tests.Shoes_AutoSuggestion">
+      <class name="com.automatiom.placeOrder.tests.TC_AddWishlistAndMovetoCart">
         <methods>
           <include name="tearDown"/>
+          <include name="wishlist"/>
           <include name="setUp"/>
-          <include name="autoSuggestion"/>
         </methods>
-      </class> <!-- com.automatiom.placeOrder.tests.Shoes_AutoSuggestion -->
+      </class> <!-- com.automatiom.placeOrder.tests.TC_AddWishlistAndMovetoCart -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
