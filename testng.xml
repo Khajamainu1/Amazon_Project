@@ -4,7 +4,7 @@
   <test  name="Test">
     <classes>
      
-      <class name="com.automatiom.placeOrder.tests.Shoes_AutoSuggestion_1"/>
+      <class name="com.automatiom.placeOrder.tests.AccountUpdation"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

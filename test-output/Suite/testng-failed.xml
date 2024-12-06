@@ -3,11 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.automatiom.placeOrder.tests.Shoes_AutoSuggestion_1">
+      <class name="com.automatiom.placeOrder.tests.AccountUpdation">
         <methods>
-          <include name="test"/>
+          <include name="updateAccInfo"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.automatiom.placeOrder.tests.Shoes_AutoSuggestion_1 -->
+      </class> <!-- com.automatiom.placeOrder.tests.AccountUpdation -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

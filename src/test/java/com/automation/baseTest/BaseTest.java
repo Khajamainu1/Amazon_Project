@@ -13,10 +13,10 @@ public class BaseTest {
 		Driver.initDriver();
 	}
 	
-	@AfterMethod
-	public void tearDown()
-	{
-		Driver.quitDriver();
-	}
+//	@AfterMethod
+//	public void tearDown()
+//	{
+//		Driver.quitDriver();
+//	}
 
 }
