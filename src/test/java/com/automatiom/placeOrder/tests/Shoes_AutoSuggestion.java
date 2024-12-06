@@ -27,14 +27,26 @@ public class Shoes_AutoSuggestion extends BaseTest {
 		amazonHopePage.search("shoes");
 		Uninterruptibles.sleepUninterruptibly(Duration.ofSeconds(5));
 		
-		basePage.visibilityOfElementLoacated(By.xpath("//div[@class='left-pane-results-container']"));
 		
-		List<WebElement> autoSuggestion =  Driver.getDriver().findElements(By.xpath("//div[@class='left-pane-results-container']/div"));
-	
-		System.out.println("Auto suggestion : " + autoSuggestion.size());
-//		autoSuggestion.get(0).click();
 		
-		Driver.getDriver().findElement(By.xpath(null));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		basePage.visibilityOfElementLoacated(By.xpath("//div[@class='left-pane-results-container']"));
+//		
+//		List<WebElement> autoSuggestion =  Driver.getDriver().findElements(By.xpath("//div[@class='left-pane-results-container']/div"));
+//	
+//		System.out.println("Auto suggestion : " + autoSuggestion.size());
+////		autoSuggestion.get(0).click();
+//		
+//		Driver.getDriver().findElement(By.xpath(null));
 		
 		
 		

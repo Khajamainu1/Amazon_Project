@@ -2,6 +2,7 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2024-12-04T15:48:23 IST" name="Default suite" finished-at="2024-12-04T15:48:52 IST" duration-ms="28745">
     <groups>
     </groups>
@@ -53,6 +54,38 @@ at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
 at com.automation.pages.BasePage.click(BasePage.java:27)
 at com.automation.pages.AmazonHomePage.signOut(AmazonHomePage.java:94)
 at com.automatiom.placeOrder.tests.TC_AddWishlistAndMovetoCart.wishlist(TC_AddWishlistAndMovetoCart.java:27)
+=======
+  <suite started-at="2024-12-04T10:27:47 IST" name="Default suite" finished-at="2024-12-04T10:28:29 IST" duration-ms="41954">
+    <groups>
+    </groups>
+    <test started-at="2024-12-04T10:27:47 IST" name="Default test" finished-at="2024-12-04T10:28:29 IST" duration-ms="41954">
+      <class name="com.automatiom.placeOrder.tests.Place_Cancel_Order">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automatiom.placeOrder.tests.Place_Cancel_Order@223191a6]" started-at="2024-12-04T10:27:47 IST" name="setUp" finished-at="2024-12-04T10:27:57 IST" duration-ms="9513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="place_CalncelOrder()[pri:0, instance:com.automatiom.placeOrder.tests.Place_Cancel_Order@223191a6]" started-at="2024-12-04T10:27:57 IST" name="place_CalncelOrder" finished-at="2024-12-04T10:28:28 IST" duration-ms="31607" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //div[@data-name='Active Items']/div/div[4]/descendant::label/input[@aria-label='Item in shopping cart'] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\KHAJA~1.MOH\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51982}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51982/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1e5994cc60830d876b131e6f807f8f92]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@data-name='Active Items']/div/div[4]/descendant::label/input[@aria-label='Item in shopping cart'] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\KHAJA~1.MOH\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51982}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51982/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1e5994cc60830d876b131e6f807f8f92
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.automation.pages.BasePage.elementToBeClicableWait(BasePage.java:71)
+at com.automatiom.placeOrder.tests.Place_Cancel_Order.place_CalncelOrder(Place_Cancel_Order.java:64)
+>>>>>>> 5d929959cd480f74034e18c821af2e8d10235b84
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -81,6 +114,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
@@ -90,6 +124,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automatiom.placeOrder.tests.TC_AddWishlistAndMovetoCart -->
+=======
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- place_CalncelOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automatiom.placeOrder.tests.Place_Cancel_Order@223191a6]" started-at="2024-12-04T10:28:28 IST" name="tearDown" finished-at="2024-12-04T10:28:29 IST" duration-ms="754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automatiom.placeOrder.tests.Place_Cancel_Order -->
+>>>>>>> 5d929959cd480f74034e18c821af2e8d10235b84
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

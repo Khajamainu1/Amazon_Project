@@ -9,10 +9,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
 import com.automation.enums.ConfigProperties;
+import com.automation.pages.BasePage;
 import com.automation.utils.PropertyUtils;
 import com.google.common.util.concurrent.Uninterruptibles;
 
 public class Driver {
+	
+	
 	
 	
 	private Driver()
@@ -58,6 +61,7 @@ public class Driver {
 		
 		WebDriver driverInstance = driver.get();
 		driverInstance.get(PropertyUtils.getProperty(ConfigProperties.URL));
+		
 		Uninterruptibles.sleepUninterruptibly(Duration.ofSeconds(5));
 
 		 }

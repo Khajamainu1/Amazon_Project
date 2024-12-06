@@ -6,6 +6,7 @@ import java.util.Date;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentReportManager {
 	
@@ -23,6 +24,11 @@ public class ExtentReportManager {
 
 	            ExtentSparkReporter extentSparkReporter = new ExtentSparkReporter(reportPath);
 	            extentReport.attachReporter(extentSparkReporter);
+	            
+	            extentSparkReporter.config().setTheme(Theme.DARK);
+	            extentSparkReporter.config().setDocumentTitle("UI Report");
+	            extentSparkReporter.config().setReportName("Automation Report");
+	            
 	        }
 	        return extentReport;
 		

@@ -1,7 +1,10 @@
 package com.automation.pages;
 
 import java.time.Duration;
+<<<<<<< HEAD
 import java.util.concurrent.TimeUnit;
+=======
+>>>>>>> 5d929959cd480f74034e18c821af2e8d10235b84
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -27,6 +30,7 @@ public class AmazonHomePage extends BasePage {
 			PageFactory.initElements(driver, this);
 		} 
 		else { throw new RuntimeException("Driver is not initialized. Please check driver setup."); } 
+<<<<<<< HEAD
 	}
 
 	//   public  AmazonHomePage(WebDriver driver)
@@ -94,4 +98,47 @@ public class AmazonHomePage extends BasePage {
 		click(btn_signout, "signout");
 	}
 
+=======
+		}
+    
+//   public  AmazonHomePage(WebDriver driver)
+//   {
+//	this.driver=driver;
+//	PageFactory.initElements(driver, this);
+//   }
+   
+    @FindBy(xpath="//input[@id='twotabsearchtextbox']")
+    private WebElement searchBox;
+    
+    @FindBy(xpath="//span[text()='Account & Lists']")
+    WebElement signIn;
+    
+    @FindBy(id = "nav-search-submit-button")
+    WebElement btn_Search;
+    
+    @FindBy(xpath = "//a[@id='nav-cart']")
+    WebElement logo_cart;
+    
+    
+    
+    public void search(String value) {
+        sendKeys(searchBox, value, "Search Box");
+        click(btn_Search, "Search");
+//        presenceOfElementLoacated(By.xpath("//span[text()='" + value + "']"));
+        presenceOfElementLoacated(By.xpath("//span[text()='\"" + value + "\"']"));
+    }
+    
+    public void clickSignIn()
+    {
+    	
+    	Uninterruptibles.sleepUninterruptibly(Duration.ofSeconds(1));
+    	click(signIn, "SignIn");
+    }
+    
+    public void clickCartLogo()
+    {
+    	click(logo_cart, "Cart logo");
+    }
+    
+>>>>>>> 5d929959cd480f74034e18c821af2e8d10235b84
 }

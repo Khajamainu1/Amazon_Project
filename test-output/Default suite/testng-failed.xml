@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.automatiom.placeOrder.tests.TC_AddWishlistAndMovetoCart">
         <methods>
           <include name="tearDown"/>
@@ -10,6 +11,15 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- com.automatiom.placeOrder.tests.TC_AddWishlistAndMovetoCart -->
+=======
+      <class name="com.automatiom.placeOrder.tests.Place_Cancel_Order">
+        <methods>
+          <include name="tearDown"/>
+          <include name="place_CalncelOrder"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.automatiom.placeOrder.tests.Place_Cancel_Order -->
+>>>>>>> 5d929959cd480f74034e18c821af2e8d10235b84
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
